@@ -1,0 +1,46 @@
+// Compass mixins and helpers
+@import "compass/css3";
+
+// Scriptswich common styles
+	@import "scriptswitch/base";
+	@import "scriptswitch/custom-scroll";
+	@import "scriptswitch/body";
+	@import "scriptswitch/header";
+	@import "scriptswitch/tabs";
+	@import "scriptswitch/main-content";
+	@import "scriptswitch/subtab-header";
+	@import "scriptswitch/view-select";
+	@import "scriptswitch/pagination";
+	@import "scriptswitch/base-buttons";
+	@import "scriptswitch/switch-form";
+	@import "scriptswitch/custom-input-fields";
+	@import "scriptswitch/jstree";
+
+// Add edit switches
+	@import "scriptswitch/switches";
+// Advanced filter
+	@import "scriptswitch/advanced-filter";
+// Summary
+	@import "scriptswitch/summary";
+// Switch stats
+	@import "scriptswitch/switch-stats";
+// Template
+	@import "scriptswitch/template";
+// Switch ordering
+	@import "scriptswitch/switch-ordering";
+// Switch tagging
+	@import "scriptswitch/switch-tagging";
+// History
+	@import "scriptswitch/history";
+// Products
+	@import "scriptswitch/products";
+// Library
+	@import "scriptswitch/library";
+// Authorise
+	@import "scriptswitch/authorise";
+// Submit
+	@import "scriptswitch/submit";
+// Deploy
+	@import "scriptswitch/deploy";
+// Reports
+	@import "scriptswitch/reports";

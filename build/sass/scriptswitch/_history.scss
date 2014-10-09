@@ -1,0 +1,94 @@
+.history {
+	.subtab-header {
+		padding: $padding-default 0 $padding-default $padding-default;
+		p {
+			margin: 0;
+			font-size: $font-size-extra-large;
+			line-height: 24px;
+			color: #ffffff;
+			font-weight: 700;
+			float: left;
+		}
+		.btn-back {
+			float: right;
+			width: 50px;
+		}
+	}
+
+	.history-container {
+		border-width: 0 1px 1px 1px;
+	}
+
+	table.history-table {
+		position: relative;
+		width: 100%;
+		tr {
+			th,
+			td {
+				text-align: left;
+				padding: $padding-default / 2;
+				vertical-align: top;
+			}
+			th.original-product,
+			td.original-product {
+				width: 12%;
+			}
+			th.dosage,
+			td.dosage {
+				width: 8%;
+			}
+			th.replacement-drug,
+			td.replacement-drug {
+				width: 12%;
+			}
+			th.dosage-rules,
+			td.dosage-rules {
+				width: 10%;
+			}
+			th.date-time,
+			td.date-time {
+				width: 8%;
+			}
+			th.reason,
+			td.reason {
+				width: 8%;
+			}
+			th.status,
+			td.status {
+				width: 8%;
+			}
+			th.author,
+			td.author {
+				width: 8%;
+			}
+		}
+		thead {
+			th {
+				color: $color-blue;
+				text-indent: 14px;
+				background: url('../images/history_table_sort.png') 5px 14px no-repeat;
+				padding-top: $padding-default;
+				padding-bottom: $padding-default;
+				border-bottom: 1px solid $color-border;
+				&.sort-desc {
+					background: url('../images/history_table_sort_desc.png') 5px 16px no-repeat;
+				}
+			}
+		}
+		th.original-product {
+			&.sort-desc {
+				background: url('../images/history_table_sort_desc.png') 10px 16px no-repeat;
+				text-indent: 19px;
+			}
+		}
+		td.original-product {
+			padding-left: $padding-default;
+		}
+		tbody {
+			tr:nth-child(odd) {
+				background-color: #f4f3ec;
+			}
+		}
+	}
+
+}

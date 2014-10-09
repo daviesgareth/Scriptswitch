@@ -1,0 +1,62 @@
+.single-column.reports #main-content .main-content-col .tabs {
+	margin-left: 0;
+	width: 100%;
+	li {
+		width: 24%;
+	}
+}
+
+.reports {
+	.subtab-header {
+		padding: $padding-default 0 $padding-default $padding-default;
+		p {
+			margin: 0;
+			font-size: $font-size-extra-large;
+			line-height: 24px;
+			color: #ffffff;
+			font-weight: 700;
+			float: left;
+		}
+		.search-box-container {
+			margin-right: $margin-default;
+			width: 40%;
+			float: right;
+		}
+	}
+
+	table.history-table {
+		position: relative;
+		width: 100%;
+		tr {
+			th,
+			td {
+				text-align: left;
+				padding: $padding-default / 2;
+				vertical-align: top;
+			}
+			.date-time-created {
+				width: 30%;
+			}
+			.serial {
+				width: 70%;
+			}
+			td.serial {
+				text-decoration: underline;
+			}
+		}
+		thead {
+			th {
+				color: $color-blue;
+				padding-top: $padding-default;
+				padding-bottom: $padding-default;
+				border-bottom: 1px solid $color-border;
+			}
+		}
+		tbody {
+			tr:nth-child(odd) {
+				background-color: #f4f3ec;
+			}
+		}
+	}
+
+}

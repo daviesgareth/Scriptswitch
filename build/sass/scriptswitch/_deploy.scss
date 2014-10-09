@@ -1,0 +1,72 @@
+.deploy {
+	.tabs#sub-tabs li.last {
+		width: 100%;
+		float: right;
+	}
+	.switches .single-switch-options-background,
+	.switches .single-switch-options {
+		height: 45px;
+	}
+
+	.deploy-form {
+		padding: 10%;
+
+		.vertical-align-middle {
+			width: 100%;
+			vertical-align: middle;
+		}
+
+		background-color: #ffffff;
+		border: 1px solid $color-grey-dark;
+		h2 {
+			font-size: $font-size-extra-large;
+			font-weight: 700;
+			margin: 0 0 $margin-default 0;
+			padding-bottom: $padding-default;
+			border-bottom: 1px solid $color-grey-light;
+		}
+		p {
+			font-size: $font-size-large;
+		}
+		p.deploy-serial-number {
+			font-size: 24px;
+		}
+		table.deploy-profle {
+			width: 100%;
+			margin-top: $margin-default * 4;
+			border: 1px solid $color-grey-dark;
+			th {
+				background-color: $color-grey-dark;
+				color: #ffffff;
+				padding: $padding-default / 2;
+			}
+			td {
+				font-size: $font-size-large;
+				padding: $padding-default;
+				border-left: 1px solid $color-grey-dark;
+				&.row-header {
+					text-align: right;
+					font-weight: 700;
+				}
+				text-align: center;
+				a {
+					color: $color-blue;
+					text-decoration: underline;
+				}
+			}
+			tr.total-row td {
+				background-color: #f4f3ec;
+			}
+		}
+	}
+
+	.deploy-form-controls {
+		padding: $padding-default;
+		.btn-deploy-form {
+			width: 100%;
+			height: 60px;
+			font-weight: 700;
+			font-size: $font-size-extra-large;
+		}
+	}
+}

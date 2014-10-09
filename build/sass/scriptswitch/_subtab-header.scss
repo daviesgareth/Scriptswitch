@@ -1,0 +1,62 @@
+.subtab-header {
+	background: $color-grey-dark;
+	padding: $padding-default / 2 $padding-default;
+	font-size: $font-size-large;
+	.search-box-container {
+		height: 24px;
+		width: 49%;
+		position: relative;
+		float: left;
+		border: 1px solid $color-border;
+		@include border-radius(0 5px 5px 0);
+		.input-light {
+			padding-top: 3px;
+			padding-bottom: 3px;
+			float: left;
+			border-width: 0 !important;
+			width: 100%;
+		}
+		.advanced-search-toggle {
+			position: absolute;
+			cursor: pointer;
+			right: 52px;
+			height: 22px;
+			width: 22px;
+			background: url('../images/search_advanced_icon.png') right center no-repeat;
+			&:hover {
+				background: url('../images/search_advanced_icon_hover.png') right center no-repeat;
+			}
+		}
+		.advanced-search-clear {
+			position: absolute;
+			cursor: pointer;
+			right: 30px;
+			height: 22px;
+			width: 22px;
+			background: url('../images/search_clear_icon.png') right center no-repeat;
+			&:hover {
+				background: url('../images/search_clear_icon_hover.png') right center no-repeat;
+			}
+		}
+		.advanced-search-button {
+			@include border-radius(0 4px 4px 0);
+			height: 22px;
+			width: 30px;
+			position: absolute;
+			right: 0;
+			cursor: pointer;
+			background: url('../images/light_search_icon.png') right center no-repeat;
+			&:hover {
+				background: url('../images/light_search_icon_orange_hover.png') right center no-repeat;
+			}
+			&:focus,
+			&.active {
+				background: url('../images/light_search_icon_orange_on.png') right center no-repeat;
+			}
+		}
+	}
+	.search-filter {
+		float: right;
+		width: 49%;
+	}
+}

@@ -1,0 +1,235 @@
+.scriptswitch-select {
+
+	// Generic options
+
+		// Parent container
+		font-size: $font-size-large;
+		cursor: pointer;
+		position: relative;
+		display: inline-block;
+
+		// Nothing selected
+		.scriptswitch-select-selected-option.no-selection {
+			font-style: italic;
+		}
+
+		// Hide options by default
+		.scriptswitch-select-options {
+			display: none;
+		}
+
+		// Show options on click
+
+		&.open {
+			.scriptswitch-select-options {
+				display: block;
+				position: absolute;
+				height: 150px;
+				width: 100%;
+				padding: 0 0 0 4px;
+				z-index: 50;
+				// Individual options
+				.scriptswitch-select-option {
+					padding: 5px 0;
+					border-bottom: 1px solid #6d7076;
+					// Remove border on last option
+					&.last {
+						border-bottom: 0;
+					}
+					// Add selected styles
+					&.scriptswitch-select-option-selected {
+						color: $color-orange;
+						font-weight: 700;
+					}
+				}
+			}
+			// Add padding when JScrollPane is on
+			.jspPane {
+				.scriptswitch-select-option {
+					padding: 5px;
+				}
+			}
+		}
+
+	// Set theme options
+
+	&.dark {
+		color: $color-grey-light;
+		background-color: $color-grey-dark;
+		.scriptswitch-select-selected-option {
+			padding: 3px 30px 3px 4px ;
+			border: 1px solid $color-border;
+			background: url('../images/light_select_down_arrow_default.png') right top no-repeat;
+		}
+		&:hover,
+		&.hover {
+			.scriptswitch-select-selected-option {
+				border-color: #d3d3d3;
+				background: url('../images/light_select_down_arrow_hover.png') right top no-repeat;
+			}
+		}
+		&.open {
+			.scriptswitch-select-options {
+				background-color: $color-grey-dark;
+				border: 1px solid $color-border;
+				border-width: 0 1px 1px;
+			}
+			.scriptswitch-select-selected-option {
+				border-color: #d3d3d3;
+				background: url('../images/light_select_down_arrow_open.png') right top no-repeat;
+			}
+			.scriptswitch-select-control {
+				background-color: #d3d3d3;
+				color: $color-grey-dark;
+			}
+			.scriptswitch-select-option {
+				// Add hover styles
+				&:hover,
+				&.hover {
+					color: #ffffff;
+				}
+			}
+
+			.scriptswitch-select-control-confirm {
+				border-right: 1px solid $color-grey-dark;
+			}
+		}
+	}
+
+	&.light {
+		font-size: $font-size-default;
+		color: $color-grey-dark;
+		.scriptswitch-select-selected-option {
+			padding: 0 20px 0 2px;
+			height: 18px;
+			border: 1px solid #b1b3b3;
+			background: url('../images/dark_select_down_arrow_default.png') right center no-repeat;
+		}
+		&:hover,
+		&.hover {
+			.scriptswitch-select-selected-option {
+				border-color: #878b8a;
+				background: url('../images/dark_select_down_arrow_hover.png') right top no-repeat;
+			}
+		}
+		&.open {
+			.scriptswitch-select-options {
+				border: 1px solid #878b8a;
+				border-width: 0 1px 1px;
+				background: #ffffff;
+			}
+			.scriptswitch-select-selected-option {
+				border-color: #878b8a;
+				background: url('../images/dark_select_down_arrow_open.png') right top no-repeat;
+			}
+			.scriptswitch-select-control {
+				background-color: #878b8a;
+				color: #ffffff;
+			}
+			.scriptswitch-select-option {
+				// Add hover styles
+				&:hover,
+				&.hover {
+					color: #878b8a;
+				}
+			}
+
+			.scriptswitch-select-control-confirm {
+				border-right: 1px solid $color-grey-dark;
+			}
+		}
+	}
+
+}
+
+// Multi select
+
+.scriptswitch-select-multi {
+	min-width: 190px;
+	// Add checkboxes
+	input.scriptswitch-select-multi-checkbox {
+		float: right;
+		margin-right: 5px;
+	}
+	// Hide control by default
+	.scriptswitch-select-control {
+		display: none;
+	}
+	&.open {
+		.scriptswitch-select-options {
+			overflow: hidden;
+			.scriptswitch-select-options-inner {
+				height: 124px;
+			}
+		}
+		.scriptswitch-select-control {
+			position: absolute;
+			width: 100%;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			display: block;
+			font-size: $font-size-large;
+			height: 25px;
+			padding: 2px $padding-default / 2;
+			.scriptswitch-select-control-confirm {
+				width: 65%;
+				float: left;
+				text-align: center;
+				padding: 2px 0;
+			}
+			.scriptswitch-select-control-cancel {
+				width: 33%;
+				float: right;
+				text-align: center;
+				padding: 2px 0;
+			}
+		}
+	}
+	// Reset multiselect when JScrollPane is on
+	.jspPane {
+		input.scriptswitch-select-multi-checkbox {
+			margin-right: 15px;
+		}
+	}
+}
+
+.scriptswitch-select.scriptswitch-select-above.light {
+	.scriptswitch-select-options {
+		bottom: 17px;
+		border-top-width: 1px;
+	}
+}
+
+// Checkbox
+
+.scriptswitch-checkbox {
+	@include border-radius(3px);
+	display: inline-block;
+	border: 1px solid #7a7d82;
+	height: 18px;
+	width: 18px;
+	z-index: 15;
+	cursor: pointer;
+	background-color: #e5e5e5;
+	@include background(
+		linear-gradient(#e5e5e5, #cdcece)
+	);
+	&:hover {
+		background-color: #fefefe;
+		@include background(
+			linear-gradient(#fefefe, #e7e7e7)
+		);
+	}
+	&.active {
+		background-color: #fefefe;
+		background-image: url('../images/checkbox_tick_icon.png');
+		@include background(
+			image-url('../images/checkbox_tick_icon.png'),
+			linear-gradient(#999999, #e5e5e5 15%)
+		);
+		border: 1px solid $color-orange;
+		background-repeat: no-repeat;
+		background-position: 50%;
+	}
+}

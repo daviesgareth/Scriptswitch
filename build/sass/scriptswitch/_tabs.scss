@@ -1,0 +1,82 @@
+.tabs {
+	&#main-tabs {
+		list-style-type: none;
+		margin: $margin-default / 2 auto 0;
+		padding: 0;
+		width: 522px;
+		li {
+			display: inline-block;
+			margin-right: 2px;
+			text-align: center;
+			a {
+				background-color: $color-grey-light;
+				@include background-image(linear-gradient(#e5e5e5, $color-grey-light));
+				@include border-top-left-radius(5px);
+				@include border-top-right-radius(5px);
+				display: block;
+				width: 100px;
+				color: $font-color-default;
+				padding: 4px 6px;
+				font-size: $font-size-large;
+				border: 1px solid $color-border;
+				border-width: 1px 1px 0 1px;
+			}
+			&:hover a {
+				background-color: #f1ae7c;
+				@include background-image(linear-gradient(#f6c8a6, #f1ae7c));
+				border: 1px solid $color-orange;
+				border-bottom-width: 0;
+				text-decoration: none;
+			}
+			&.last {
+				margin-right: 0;
+			}
+			&.active a {
+				background-color: $color-orange;
+				@include background-image(linear-gradient(#bb601b, $color-orange));
+				padding-top: 5px;
+				color: #ffffff;
+				border: none;
+			}
+			&.disabled a {
+				border: 1px solid #b1b3b3;
+				border-bottom-width: 0;
+				color: #7d8082;
+				background-color: #e7e7e7;
+				@include background-image(linear-gradient(#fefefe, #e7e7e7));
+				cursor: not-allowed;
+			}
+		}
+	}
+	&#sub-tabs {
+		@extend #main-tabs;
+		margin-top: 0;
+		width: 100%;
+		list-style-type: none;
+		li {
+			float: left;
+			margin-right: 1.25%;
+			width: 19%;
+			a {
+				max-width: 100%;
+				width: 100%;
+				border: 1px solid $color-grey-light;
+				border-bottom-width: 0;
+				background: #cccccc;
+			}
+			&:hover a {
+				background: $color-orange;
+				color: #ffffff;
+				text-decoration: none;
+			}
+			&.active {
+				a {
+					border: 1px solid $color-grey-dark;
+					background: $color-grey-dark;
+					border-bottom-width: 0;
+					padding-bottom: 3px;
+				}
+			}
+		}
+	}
+}

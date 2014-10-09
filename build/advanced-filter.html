@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ScriptSwitch Page Template</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/bootstrap.css" type="text/css" rel="stylesheet" />
+	<link href="css/scriptswitch.css" type="text/css" rel="stylesheet" />
+	<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+		<script src="js/respond.min.js"></script>
+	<![endif]-->
+	<!--[if lte IE 9]>
+		<link href="css/pie.css" rel="stylesheet" type="text/css" />
+		<link href="css/ie.css" media="screen" rel="stylesheet" type="text/css" />
+	<![endif]-->
+</head>
+<body class="advanced-filter">
+	<header id="header">
+		<div class="row">
+			<div class="col-md-7 col-md-offset-2">
+				<div class="row">
+					<table id="profile-tool-select">
+						<tr>
+							<td>
+								<label for="select-profile">Select Profile</label>
+								<div class="scriptswitch-select scriptswitch-select-single light">
+									<div class="scriptswitch-select-selected-option no-selection">
+										<span>Scriptswitch CMS</span>
+									</div>
+									<div class="scriptswitch-select-options">
+										<div class="scriptswitch-select-option">Option 1</div>
+										<div class="scriptswitch-select-option">Option 2</div>
+										<div class="scriptswitch-select-option">Option 3</div>
+										<div class="scriptswitch-select-option scriptswitch-select-option-selected">Option 4</div>
+										<div class="scriptswitch-select-option">Option 5</div>
+										<div class="scriptswitch-select-option last">Option 6</div>
+									</div>
+								</div>
+							</td>
+							<td>
+								<label for="select-tool">Select Tool</label>
+								<div class="scriptswitch-select scriptswitch-select-single light">
+									<div class="scriptswitch-select-selected-option no-selection">
+										<span>Scriptswitch CMS</span>
+									</div>
+									<div class="scriptswitch-select-options">
+										<div class="scriptswitch-select-option">Option 1</div>
+										<div class="scriptswitch-select-option">Option 2</div>
+										<div class="scriptswitch-select-option">Option 3</div>
+										<div class="scriptswitch-select-option scriptswitch-select-option-selected">Option 4</div>
+										<div class="scriptswitch-select-option">Option 5</div>
+										<div class="scriptswitch-select-option last">Option 6</div>
+									</div>
+								</div>
+							</td>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="col-md-3" id="user-id">
+				<p>Logged in as <a href="#">Neil Stocking</a> | <a href="#">Log Out</a></p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-2">
+				<img id="logo" src="../images/scriptswitch_logo.jpg" />
+			</div>
+			<div class="col-md-8">
+				<ul id="main-tabs" class="tabs rounded">
+					<li class="active"><a href="#">Add/Edit</a></li>
+					<li><a href="#">Authorise 24</a></li>
+					<li><a href="#">Deploy 12</a></li>
+					<li><a href="#">Reports</a></li>
+					<li class="disabled last"><a href="#">Support</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+
+	<main id="main-content">
+
+		<div class="row">
+
+			<div class="col-md-12">
+
+				<section class="main-content-col">
+
+					<div class="main-content-inner-col">
+
+						<ul id="sub-tabs" class="tabs clearfix rounded">
+							<li><a href="#">Products</a></li>
+							<li class="active"><a href="#">Profile</a></li>
+							<li><a href="#">Selected 145</a></li>
+							<li><a href="#">Templates</a></li>
+							<li class="last"><a href="#">Library</a></li>
+						</ul>
+
+						<div class="subtab-header clearfix">
+
+							<h2 class="dark-section-title">Advanced Filter</h2>
+
+							<div class="search-box-container advanced-filter-searchbox clearfix">
+								<input type="text" name="profile-search" placeholder="Search" class="input-light text-field simple-search" />
+								<div class="advanced-search-clear"></div>
+							</div>
+
+							<div class="recommendation-type scriptswitch-select scriptswitch-select-single dark last">
+								<div class="scriptswitch-select-selected-option no-selection">
+									<span>Recommendation type</span>
+								</div>
+								<div class="scriptswitch-select-options">
+									<div class="scriptswitch-select-option">Option 1</div>
+									<div class="scriptswitch-select-option">Option 2</div>
+									<div class="scriptswitch-select-option">Option 3</div>
+									<div class="scriptswitch-select-option scriptswitch-select-option-selected">Option 4</div>
+									<div class="scriptswitch-select-option">Option 5</div>
+									<div class="scriptswitch-select-option last">Option 6</div>
+								</div>
+							</div>
+
+							<div class="last-modified-user scriptswitch-select scriptswitch-select-single dark">
+								<div class="scriptswitch-select-selected-option no-selection">
+									<span>Last modified user</span>
+								</div>
+								<div class="scriptswitch-select-options">
+									<div class="scriptswitch-select-option">Option 1</div>
+									<div class="scriptswitch-select-option">Option 2</div>
+									<div class="scriptswitch-select-option">Option 3</div>
+									<div class="scriptswitch-select-option scriptswitch-select-option-selected">Option 4</div>
+									<div class="scriptswitch-select-option">Option 5</div>
+									<div class="scriptswitch-select-option last">Option 6</div>
+								</div>
+							</div>
+
+							<div class="tags scriptswitch-select scriptswitch-select-multi dark last">
+								<div class="scriptswitch-select-selected-option no-selection">
+									<span>Tags</span>
+								</div>
+								<div class="scriptswitch-select-options">
+									<div class="scriptswitch-select-options-inner">
+										<div class="scriptswitch-select-option">Option 1 <input type="checkbox" class="scriptswitch-select-multi-checkbox" /></div>
+										<div class="scriptswitch-select-option">Option 2 <input type="checkbox" class="scriptswitch-select-multi-checkbox" /></div>
+										<div class="scriptswitch-select-option">Option 3 <input type="checkbox" class="scriptswitch-select-multi-checkbox" /></div>
+										<div class="scriptswitch-select-option scriptswitch-select-option-selected">Option 4 <input type="checkbox" class="scriptswitch-select-multi-checkbox" checked/></div>
+										<div class="scriptswitch-select-option">Option 5 <input type="checkbox" class="scriptswitch-select-multi-checkbox" /></div>
+										<div class="scriptswitch-select-option last">Option 6 <input type="checkbox" class="scriptswitch-select-multi-checkbox" /></div>
+									</div>
+									<div class="scriptswitch-select-control">
+										<div class="scriptswitch-select-control-confirm">Confirm Selection</div>
+										<div class="scriptswitch-select-control-cancel">Cancel</div>
+									</div>
+								</div>
+							</div>
+
+							<hr class="dark">
+
+							<h2 class="dark-section-title">Filter by BNF Chapter</h2>
+
+						</div>
+
+						<div class="filter-by-bnf-chapter">
+
+							<div class="bnf-chapter-tree dynamic-left-col scollbar">
+
+								<ul class="data-tree data-tree-top">
+									<li class="data-tree-top-item has-children closed">item1 with key and tooltip</li>
+									<li class="data-tree-top-item has-children open">item2
+										<ul class="data-tree-second has-children closed">
+											<li class="data-tree-second-item has-children">Sub-item 3.1</li>
+											<li class="data-tree-second-item has-children">Sub-item 3.1</li>
+											<li class="data-tree-second-item has-children">Sub-item 3.1</li>
+										</ul>
+									</li>
+									<li class="data-tree-top-item has-children open">Folder with some children
+										<ul class="data-tree-second has-children open">
+											<li class="data-tree-second-item has-children open">Sub-item 3.1
+												<ul class="data-tree-third">
+													<li class="data-tree-third-item">Sub-item 3.1.1</li>
+													<li class="data-tree-third-item last-item">Sub-item 3.1.2</li>
+												</ul>
+											</li>
+											<li class="data-tree-second-item has-children open">Sub-item 3.2
+												<ul class="data-tree-third">
+													<li class="data-tree-third-item">Sub-item 3.2.1</li>
+													<li class="data-tree-third-item last-item">Sub-item 3.2.2</li>
+												</ul>
+											</li>
+											<li class="data-tree-second-item has-children open">Document with some children (expanded on init)
+												<ul class="data-tree-third">
+													<li class="data-tree-third-item">Sub-item 4.1 (active and focus on init)</li>
+													<li class="data-tree-third-item last-item">Sub-item 4.2</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li class="data-tree-top-item has-children open last-item">Folder with some children
+										<ul class="data-tree-second open">
+											<li class="data-tree-second-item has-children open">Sub-item 3.1
+												<ul class="data-tree-third">
+													<li class="data-tree-third-item">Sub-item 3.1.1</li>
+													<li class="data-tree-third-item last-item">Sub-item 3.1.2</li>
+												</ul>
+											</li>
+											<li class="data-tree-second-item has-children open">Sub-item 3.2
+												<ul class="data-tree-third">
+													<li class="data-tree-third-item">Sub-item 3.2.1</li>
+													<li class="data-tree-third-item last-item">Sub-item 3.2.2</li>
+												</ul>
+											</li>
+											<li class="data-tree-second-item has-children open last-item">Document with some children (expanded on init)
+												<ul class="data-tree-third">
+													<li class="data-tree-third-item">Sub-item 4.1 (active and focus on init)</li>
+													<li class="data-tree-third-item last-item">Sub-item 4.2</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+
+						</div>
+
+						<div class="base-buttons advanced-filter-base-buttons clearfix">
+							<button class="btn-base">Cancel</button>
+							<button class="btn-base last">Confirm</button>
+						</div>
+
+					</div>
+
+				</section>
+
+				<div class="main-content-col-divider">
+					<span class="col-divider-drag">&bull;</span>
+					<span class="col-divider-drag">&bull;</span>
+					<span class="col-divider-drag">&bull;</span>
+					<span class="col-divider-drag">&bull;</span>
+				</div>
+
+				<section class="main-content-col last">
+
+					<div class="main-content-inner-col switch-form-col">
+
+						<div class="dynamic-right-col switch-form">
+
+							<div class="switch-form-step product-search">
+
+								<h2>1. Product Search</h2>
+
+								<table class="switch-form-product-search-table">
+									<tr>
+										<td>Original</td>
+										<td colspan="4"><input type="text" /></td>
+									</tr>
+									<tr>
+										<td>Dosage</td>
+										<td>
+											<div class="scriptswitch-select scriptswitch-select-single light">
+												<div class="scriptswitch-select-selected-option no-selection">
+													<span>Select:</span>
+												</div>
+												<div class="scriptswitch-select-options">
+													<div class="scriptswitch-select-option">Option 1</div>
+													<div class="scriptswitch-select-option">Option 2</div>
+													<div class="scriptswitch-select-option">Option 3</div>
+													<div class="scriptswitch-select-option scriptswitch-select-option-selected">Option 4</div>
+													<div class="scriptswitch-select-option">Option 5</div>
+													<div class="scriptswitch-select-option last">Option 6</div>
+												</div>
+											</div>
+										</td>
+										<td>
+											<div class="scriptswitch-select scriptswitch-select-single light">
+												<div class="scriptswitch-select-selected-option no-selection">
+													<span>Select:</span>
+												</div>
+												<div class="scriptswitch-select-options">
+													<div class="scriptswitch-select-option">Option 1</div>
+													<div class="scriptswitch-select-option">Option 2</div>
+													<div class="scriptswitch-select-option">Option 3</div>
+													<div class="scriptswitch-select-option scriptswitch-select-option-selected">Option 4</div>
+													<div class="scriptswitch-select-option">Option 5</div>
+													<div class="scriptswitch-select-option last">Option 6</div>
+												</div>
+											</div>
+										</td>
+										<td colspan="2">
+										</td>
+									</tr>
+									<tr>
+										<td>Replacement</td>
+										<td colspan="4"><input type="text" /></td>
+									</tr>
+									<tr>
+										<td>Dosage</td>
+										<td>
+											<div class="scriptswitch-select scriptswitch-select-single light">
+												<div class="scriptswitch-select-selected-option no-selection">
+													<span>Select:</span>
+												</div>
+												<div class="scriptswitch-select-options">
+													<div class="scriptswitch-select-option">Option 1</div>
+													<div class="scriptswitch-select-option">Option 2</div>
+													<div class="scriptswitch-select-option">Option 3</div>
+													<div class="scriptswitch-select-option scriptswitch-select-option-selected">Option 4</div>
+													<div class="scriptswitch-select-option">Option 5</div>
+													<div class="scriptswitch-select-option last">Option 6</div>
+												</div>
+											</div>
+										</td>
+										<td>
+											<div class="scriptswitch-select scriptswitch-select-single light">
+												<div class="scriptswitch-select-selected-option no-selection">
+													<span>Select:</span>
+												</div>
+												<div class="scriptswitch-select-options">
+													<div class="scriptswitch-select-option">Option 1</div>
+													<div class="scriptswitch-select-option">Option 2</div>
+													<div class="scriptswitch-select-option">Option 3</div>
+													<div class="scriptswitch-select-option scriptswitch-select-option-selected">Option 4</div>
+													<div class="scriptswitch-select-option">Option 5</div>
+													<div class="scriptswitch-select-option last">Option 6</div>
+												</div>
+											</div>
+										</td>
+										<td width="10%" align="right" valign="middle">
+											<label>Timings</label>
+										</td>
+										<td>
+											<div class="timings scriptswitch-select scriptswitch-select-single light">
+												<div class="scriptswitch-select-selected-option no-selection">
+													<span>Daily (default):</span>
+												</div>
+												<div class="scriptswitch-select-options">
+													<div class="scriptswitch-select-option">Option 1</div>
+													<div class="scriptswitch-select-option">Option 2</div>
+													<div class="scriptswitch-select-option">Option 3</div>
+													<div class="scriptswitch-select-option scriptswitch-select-option-selected">Option 4</div>
+													<div class="scriptswitch-select-option">Option 5</div>
+													<div class="scriptswitch-select-option last">Option 6</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+								</table>
+
+							</div>
+
+							<div class="switch-form-step options">
+
+								<h2>2. Options</h2>
+
+								<table class="switch-form-options-table">
+									<tr>
+										<td>
+											<p>Quantity Calculation</p>
+											<div class="scriptswitch-select scriptswitch-select-single light">
+												<div class="scriptswitch-select-selected-option no-selection">
+													<span>Equalise Treatment Length (ETL):</span>
+												</div>
+												<div class="scriptswitch-select-options">
+													<div class="scriptswitch-select-option">Option 1</div>
+													<div class="scriptswitch-select-option">Option 2</div>
+													<div class="scriptswitch-select-option">Option 3</div>
+													<div class="scriptswitch-select-option scriptswitch-select-option-selected">Option 4</div>
+													<div class="scriptswitch-select-option">Option 5</div>
+													<div class="scriptswitch-select-option last">Option 6</div>
+												</div>
+											</div>
+										</td>
+										<td>
+											<p>Script Types (Select all that apply)</p>
+											<div class="scriptswitch-select scriptswitch-select-multi light">
+												<div class="scriptswitch-select-selected-option no-selection">
+													<span>Repeat Authorisations</span>
+												</div>
+												<div class="scriptswitch-select-options">
+													<div class="scriptswitch-select-options-inner">
+														<div class="scriptswitch-select-option">Option 1 <input type="checkbox" class="scriptswitch-select-multi-checkbox" /></div>
+														<div class="scriptswitch-select-option">Option 2 <input type="checkbox" class="scriptswitch-select-multi-checkbox" /></div>
+														<div class="scriptswitch-select-option">Option 3 <input type="checkbox" class="scriptswitch-select-multi-checkbox" /></div>
+														<div class="scriptswitch-select-option scriptswitch-select-option-selected">Option 4 <input type="checkbox" class="scriptswitch-select-multi-checkbox" checked/></div>
+														<div class="scriptswitch-select-option">Option 5 <input type="checkbox" class="scriptswitch-select-multi-checkbox" /></div>
+														<div class="scriptswitch-select-option last">Option 6 <input type="checkbox" class="scriptswitch-select-multi-checkbox" /></div>
+													</div>
+													<div class="scriptswitch-select-control">
+														<div class="scriptswitch-select-control-confirm">Confirm Selection</div>
+														<div class="scriptswitch-select-control-cancel">Cancel</div>
+													</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+								</table>
+
+							</div>
+
+							<div class="switch-form-step last justification-text">
+
+								<h2>3. Justification Text</h2>
+
+								<button class="btn-template">Templates</button>
+
+								<img src="../images/wysiwyg.png" class="wysiwyg-placeholder" />
+
+							</div>
+
+							<div class="tag-switch">
+								<button class="btn-base btn-switch-form">4. Switch Ordering</button>
+								<button class="btn-base btn-switch-form last">5. Tag Switch</button>
+							</div>
+
+						</div>
+
+						<div class="switch-form-controls">
+
+							<div class="swtich-form-button-row clearfix">
+								<button class="btn-base btn-switch-form-controls disabled">Preview</button>
+								<button class="btn-base btn-switch-form-controls">Clear Window</button>
+								<button class="btn-base btn-switch-form-controls last">Delete</button>
+							</div>
+
+							<div class="swtich-form-button-row last clearfix">
+								<button class="btn-base btn-switch-form-controls btn-base-gradient">Save</button>
+								<button class="btn-base btn-switch-form-controls btn-base-gradient">Save/Keep Orig</button>
+								<button class="btn-base btn-switch-form-controls btn-base-gradient last">Save/Keep Rep</button>
+							</div>
+
+							<div class="keep-justification">
+								Keep justification <input type="checkbox" checked/>
+							</div>
+
+						</div>
+
+					</div>
+
+				</section>
+
+			</div>
+
+		</div>
+
+	</main>
+
+	<script src="js/jquery.min.js"></script>
+	<script scr="js/jquery-ui.min.js"></script>
+	<script src="js/jquery.mousewheel.js"></script>
+	<script src="js/jquery.jscrollpane.min.js"></script>
+	<script src="js/scriptswitch.demo.handlers.js"></script>
+
+</body>
+</html>

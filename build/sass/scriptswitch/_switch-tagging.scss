@@ -1,0 +1,40 @@
+.switch-tagging {
+	.switch-order {
+		border: 1px solid $color-grey-dark;
+		background: #ffffff;
+		.switch-order-form {
+			padding: 10%;
+			h2 {
+				font-size: $font-size-extra-large;
+				font-weight: 700;
+				margin: 0 0 $margin-default 0;
+				padding-bottom: $padding-default;
+				border-bottom: 1px solid $color-grey-light;
+			}
+		}
+		.switch-tag-list {
+			border: 1px solid $color-grey-light;
+			.col-md-5 {
+				padding: 3px 3px 0;
+			}
+			.odd {
+				.col-md-5 {
+					background-color: #f4f3ec;
+				}
+			}
+			label {
+				line-height: 20px;
+				display: inline-block;
+				font-size: $font-size-large;
+				margin: 0;
+				margin-left: $margin-default;
+				vertical-align: top;
+			}
+		}
+	}
+	.switch-order-controls {
+		.btn-base {
+			width: 49%;
+		}
+	}
+}

@@ -1,0 +1,28 @@
+header#header {
+	padding: $padding-default $padding-default 0;
+	border-bottom: 3px solid $color-orange;
+	background: #ffffff;
+	@include box-shadow(0 1px 3px $color-grey-dark);
+	img#logo {
+		margin-top: -$margin-default * 2;
+		margin-left: $margin-default * 2;
+	}
+	table#profile-tool-select {
+		margin-left: $margin-default * 4;
+		tr td {
+			padding-right: $padding-default * 2;
+			input,
+			.scriptswitch-select {
+				width: 150px
+			}
+		}
+	}
+	#user-id {
+		p {
+			text-align: right;
+			a {
+				font-weight: 700;
+			}
+		}
+	}
+}

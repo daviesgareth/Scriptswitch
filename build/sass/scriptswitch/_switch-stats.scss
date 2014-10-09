@@ -1,0 +1,19 @@
+.single-switch-stats {
+	background-color: #dedcce;
+	padding: $padding-default $padding-default * 2;
+	.stats-title {
+		font-weight: 700;
+	}
+	p.stats-details {
+		display: inline-block;
+		margin-right: $margin-default;
+		margin-bottom: 0;
+		&.last {
+			margin-right: 0;
+		}
+		span.stats-detail {
+			font-weight: 700;
+		}
+	}
+
+}

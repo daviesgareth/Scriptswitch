@@ -1,0 +1,160 @@
+// Compass mixins and helpers
+
+	@import "compass/css3/pie";
+	@import "compass/css3";
+
+// Scriptswich styles
+
+	@import "scriptswitch/base";
+
+// ******************
+// Select boxes
+// ******************
+
+	select {
+		padding: 0 0 0 $padding-default / 2;
+		background: none;
+	}
+
+	.input-light {
+		&.select {
+			background: none;
+		}
+	}
+
+	.input-dark {
+		&.select {
+			background: none;
+		}
+	}
+
+// ******************
+// Ronded corners
+// ******************
+
+	$pie-behavior: url("/css/PIE.htc");
+	$pie-base-class: pie-element;
+
+	.pie-element {
+		@include pie-element(relative);
+	}
+
+// ******************
+// View Select
+// ******************
+
+	.btn-summary {
+		@include pie;
+		border-radius: 3px;
+	}
+
+	.btn-view-expanded {
+		@include pie;
+		border-radius: 3px 0 0 3px;
+	}
+
+	.btn-view-condensed {
+		@include pie;
+		border-radius: 0 3px 3px 0;
+	}
+
+	.btn-view-stats {
+		@include pie;
+		border-radius: 3px;
+	}
+
+// ******************
+// Base Buttons
+// ******************
+
+	.btn-base {
+		@include pie;
+		@include border-radius(3px);
+	}
+
+// ******************
+// Base Buttons
+// ******************
+
+	.btn-template {
+		@include pie;
+		@include border-radius(3px);
+	}
+
+// ******************
+// Switches
+// ******************
+
+	.single-switch-options-button {
+		@include pie;
+		@include border-radius(3px);
+	}
+
+	// Switch ordering
+
+		.switch-position-controls {
+			.up {
+				@include pie;
+				@include border-radius(3px 3px 0 0);
+			}
+			.down {
+				@include pie;
+				@include border-radius(0 0 3px 3px);
+			}
+		}
+
+	// Switch status
+
+		.single-switch-status-background {
+			@include pie;
+			@include border-radius(50% 50% 0 0);
+		}
+
+
+// ******************
+// Custom checkbox
+// ******************
+
+	.scriptswitch-checkbox {
+		@include pie;
+		@include border-radius(3px);
+	}
+
+// ******************
+// Tabs
+// ******************
+
+	.tabs li a {
+		@include pie;
+		border-radius: 5px 5px 0 0;
+	}
+
+// ******************
+// Subtab Header
+// ******************
+
+	.subtab-header {
+		.search-box-container {
+			@include pie;
+			border-radius: 0 5px 5px 0;
+		}
+	}
+
+// ******************
+// View select
+// ******************
+
+	.view-select {
+		.view-select-buttons {
+			line-height: 17px;
+		}
+	}
+
+// ******************
+// Scrollbar
+// ******************
+
+	.jspDrag {
+		@include pie;
+		@include border-radius(5px);
+	}

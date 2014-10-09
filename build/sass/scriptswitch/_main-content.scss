@@ -1,0 +1,39 @@
+#main-content {
+	margin: $margin-top-section $margin-right-section $margin-bottom-section $margin-left-section;
+	.main-content-col {
+		float: left;
+		width: 50%;
+		padding-right: $margin-left-section / 2;
+		&.last {
+			padding-left: $margin-left-section / 2;
+			padding-right: 0;
+		}
+	}
+	.main-content-col-divider {
+		cursor: col-resize;
+		top: 50%;
+		margin-top: -24px;
+		position: absolute;
+		width: 13px;
+		font-size: 15px;
+		line-height: 12px;
+		left: 50%;
+		padding-left: 4px;
+		color: $color-grey-mid;
+		margin-left: -$margin-left-section / 2;
+	}
+}
+
+.single-column {
+	#main-content {
+		.main-content-col {
+			float: none;
+			width: 100%;
+			padding-right: 0;
+			.tabs {
+				margin-left: 0;
+				width: 50%;
+			}
+		}
+	}
+}

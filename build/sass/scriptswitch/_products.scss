@@ -1,0 +1,21 @@
+.products {
+	.products-list {
+		.product {
+			padding: $padding-default $padding-default * 2;
+			&.even {
+				background-color: #f4f3ec;
+			}
+		}
+		.product-title {
+			font-weight: 700;
+			font-size: $font-size-extra-large;
+		}
+		.product-size,
+		.product-price {
+			font-size: $font-size-medium;
+			margin-right: $margin-default;
+			margin-bottom: 0;
+			display: inline-block;
+		}
+	}
+}

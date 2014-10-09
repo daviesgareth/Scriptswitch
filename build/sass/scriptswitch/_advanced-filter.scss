@@ -1,0 +1,43 @@
+.advanced-filter {
+
+	.subtab-header {
+
+		.search-box-container.advanced-filter-searchbox {
+			background-image: none;
+			@include border-right-radius(0);
+			margin-bottom: $margin-default * 2;
+			.advanced-search-clear {
+				right: 5px;
+			}
+		}
+
+		.recommendation-type,
+		.last-modified-user,
+			.tags {
+			width: 49%;
+			margin-bottom: $margin-default * 2;
+			float: left;
+			&.last {
+				float: right;
+			}
+		}
+
+	}
+
+	.advanced-filter-base-buttons .btn-base {
+		width: 49%;
+		&.last {
+			float: right;
+		}
+	}
+
+	.filter-by-bnf-chapter {
+		background-color: $color-grey-dark;
+		padding: 0 $padding-default;
+
+		.bnf-chapter-tree {
+			background-color: #ffffff;
+		}
+	}
+
+}

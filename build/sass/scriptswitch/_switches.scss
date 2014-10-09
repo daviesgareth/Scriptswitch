@@ -1,0 +1,341 @@
+.switches {
+	border: 1px solid $color-grey-dark;
+	border-width: 0 1px 1px;
+	.group-header {
+		background: $color-orange;
+		color: #ffffff;
+		padding: 8px $padding-default * 2;
+		h1 {
+			margin: 0;
+			font-size: $font-size-extra-large;
+			font-weight: 700;
+		}
+	}
+	.single-switch-header {
+		background: #ffffff;
+		position: relative;
+		padding: 8px $padding-default * 2;
+		border: 1px solid #dedcce;
+		border-width: 1px 0;
+		z-index: 10;
+		h2 {
+			margin: 0;
+			font-size: $font-size-extra-large;
+			font-weight: 700;
+		}
+	}
+	.single-switch {
+		position: relative;
+		background: #f4f3ec;
+	}
+	.single-switch-options-background {
+		position: absolute;
+		right: 20px;
+		top: 30px;
+		width: 35px;
+		height: 100px;
+		background: #dedcce;
+		@include border-bottom-radius(5px);
+		z-index: 5;
+	}
+	.single-switch-options {
+		position: absolute;
+		right: 20px;
+		top: 30px;
+		width: 35px;
+		height: 100px;
+		padding: $padding-default * 1.5 $padding-default / 2 $padding-default;
+		background: transparent;
+		z-index: 15;
+		.single-switch-options-button {
+			@include border-radius(3px);
+			border: 1px solid #7a7d82;
+			margin-bottom: 3px;
+			height: 25px;
+			z-index: 15;
+			cursor: pointer;
+			&.single-switch-options-button-select {
+				background-color: #e5e5e5;
+				@include background(
+					linear-gradient(#e5e5e5, #cdcece)
+				);
+				&:hover {
+					background-color: #fefefe;
+					@include background(
+						linear-gradient(#fefefe, #e7e7e7)
+					);
+				}
+				&.active {
+					background-color: #fefefe;
+					background-image: url('../images/btn_switch_selected_icon.png');
+					@include background(
+						image-url('../images/btn_switch_selected_icon.png'),
+						linear-gradient(#999999, #e5e5e5 15%)
+					);
+					border: 1px solid $color-orange;
+					background-repeat: no-repeat;
+					background-position: 50%;
+				}
+			}
+			&.single-switch-options-button-history {
+				background-image: url('../images/btn_switch_history_icon.png');
+				background-color: #e5e5e5;
+				@include background(
+					image-url('../images/btn_switch_history_icon.png'),
+					linear-gradient(#e5e5e5, #cdcece)
+				);
+				&:hover {
+					background-color: #fefefe;
+					@include background(
+						image-url('../images/btn_switch_history_icon.png'),
+						linear-gradient(#fefefe, #e7e7e7)
+					);
+					background-repeat: no-repeat;
+					background-position: 50%;
+				}
+				&.active {
+					background-color: #fefefe;
+					@include background(
+						image-url('../images/btn_switch_history_icon.png'),
+						linear-gradient(#999999, #e5e5e5 15%)
+					);
+					background-repeat: no-repeat;
+					background-position: 50%;
+				}
+				background-repeat: no-repeat;
+				background-position: 50%;
+			}
+			&.single-switch-options-button-share {
+				background-image: url('../images/btn_switch_share_icon.png');
+				background-color: #e5e5e5;
+				@include background(
+					image-url('../images/btn_switch_share_icon.png'),
+					linear-gradient(#e5e5e5, #cdcece)
+				);
+				&:hover {
+					background-color: #fefefe;
+					@include background(
+						image-url('../images/btn_switch_share_icon.png'),
+						linear-gradient(#fefefe, #e7e7e7)
+					);
+					background-repeat: no-repeat;
+					background-position: 50%;
+				}
+				&.disabled {
+					background-image: url('../images/btn_switch_share_icon_disabled.png');
+					background-color: #e5e5e5;
+					@include background(
+						image-url('../images/btn_switch_share_icon_disabled.png'),
+						linear-gradient(#e5e5e5, #cdcece)
+					);
+					background-repeat: no-repeat;
+					background-position: 50%;
+					&:hover {
+						background-color: #fefefe;
+						@include background(
+							image-url('../images/btn_switch_share_icon_disabled.png'),
+							linear-gradient(#fefefe, #e7e7e7)
+						);
+						background-repeat: no-repeat;
+						background-position: 50%;
+					}
+					&.active {
+						background-color: #fefefe;
+						@include background(
+							image-url('../images/btn_switch_share_icon_disabled.png'),
+							linear-gradient(#999999, #e5e5e5 15%)
+						);
+						background-repeat: no-repeat;
+						background-position: 50%;
+						border-color: $color-orange;
+					}
+				}
+				&.active {
+					background-color: #fefefe;
+					@include background(
+						image-url('../images/btn_switch_share_icon.png'),
+						linear-gradient(#999999, #cccdcd 15%)
+					);
+					background-repeat: no-repeat;
+					background-position: 50%;
+					border-color: $color-orange;
+					&:hover {
+						background-color: #fefefe;
+						@include background(
+							image-url('../images/btn_switch_share_icon.png'),
+							linear-gradient(#999999, #e5e5e5 15%)
+						);
+						background-repeat: no-repeat;
+						background-position: 50%;
+					}
+				}
+				background-repeat: no-repeat;
+				background-position: 50%;
+			}
+			&.single-switch-options-button-clone {
+				background-image: url('../images/btn_switch_clone_icon.png');
+				background-color: #e5e5e5;
+				@include background(
+					image-url('../images/btn_switch_clone_icon.png'),
+					linear-gradient(#e5e5e5, #cdcece)
+				);
+				&:hover {
+					background-color: #fefefe;
+					@include background(
+						image-url('../images/btn_switch_clone_icon.png'),
+						linear-gradient(#fefefe, #e7e7e7)
+					);
+					background-repeat: no-repeat;
+					background-position: 50%;
+				}
+				&.active {
+					background-color: #fefefe;
+					@include background(
+						image-url('../images/btn_switch_clone_icon.png'),
+						linear-gradient(#999999, #e5e5e5 15%)
+					);
+					background-repeat: no-repeat;
+					background-position: 50%;
+				}
+				background-repeat: no-repeat;
+				background-position: 50%;
+			}
+		}
+	}
+	.single-switch-status-background {
+		position: absolute;
+		right: 20px;
+		bottom: -5px;
+		width: 35px;
+		height: 40px;
+		background: #dedcce;
+		@include border-top-radius(50%);
+		z-index: 5;
+	}
+	.single-switch-status {
+		position: absolute;
+		right: 20px;
+		bottom: -5px;
+		width: 35px;
+		height: 40px;
+		padding: $padding-default * 0.5 $padding-default / 2 $padding-default;
+		background: transparent;
+		z-index: 15;
+		.single-switch-status-indicator {
+			height: 25px;
+			width: 25px;
+			cursor: pointer;
+		}
+		.single-switch-status-indicator-default {
+			@include background(
+				image-url('../images/btn_switch_status_default_icon.png')
+			);
+			background-repeat: no-repeat;
+			background-position: 50%;
+		}
+		.single-switch-status-indicator-edited {
+			@include background(
+				image-url('../images/recommendation_edited.png')
+			);
+			background-repeat: no-repeat;
+			background-position: 50%;
+		}
+		.single-switch-status-indicator-new {
+			@include background(
+				image-url('../images/recommendation_new.png')
+			);
+			background-repeat: no-repeat;
+			background-position: 50%;
+		}
+		.single-switch-status-indicator-deleted {
+			@include background(
+				image-url('../images/recommendation_deleted.png')
+			);
+			background-repeat: no-repeat;
+			background-position: 50%;
+		}
+		.single-switch-status-indicator-rejected {
+			@include background(
+				image-url('../images/recommendation_rejected.png')
+			);
+			background-repeat: no-repeat;
+			background-position: 50%;
+		}
+	}
+	.single-switch-details {
+		position: relative;
+		margin: 3px;
+		padding: 6px 80px 6px 16px;
+		background: transparent;
+		z-index: 10;
+		p {
+			margin-bottom: 3px;
+		}
+	}
+	.active {
+		.single-switch-details {
+			border: 2px solid $color-orange;
+		}
+	}
+}
+
+// Editing a single switch
+
+.edit-single-switch {
+	.switches {
+		.single-switch-options-background,
+		.single-switch-options {
+			height: 45px;
+		}
+		.single-switch-options-button-deselect {
+			background-color: #e5e5e5;
+			background-image: url('../images/btn_switch_deselect_icon.png');
+			@include background(
+				image-url('../images/btn_switch_deselect_icon.png'),
+				linear-gradient(#e5e5e5, #cdcece)
+			);
+			&:hover {
+				background-color: #fefefe;
+				background-image: url('../images/btn_switch_deselect_icon.png');
+				@include background(
+					image-url('../images/btn_switch_deselect_icon.png'),
+					linear-gradient(#fefefe, #e7e7e7)
+				);
+				background-repeat: no-repeat;
+				background-position: 50%;
+			}
+			&.active {
+				background-color: #fefefe;
+				background-image: url('../images/btn_switch_deselect_icon.png');
+				@include background(
+					image-url('../images/btn_switch_deselect_icon.png'),
+					linear-gradient(#999999, #e5e5e5 15%)
+				);
+				border: 1px solid $color-grey-dark;
+				background-repeat: no-repeat;
+				background-position: 50%;
+			}
+			background-repeat: no-repeat;
+			background-position: 50%;
+		}
+	}
+	.base-buttons {
+		.btn-base {
+			width: 18%;
+		}
+		.btn-batch-edit {
+			width: 41%;
+			text-indent: -20px;
+			&:hover {
+				background-image: url('../images/btn_batch_edit_hover.png');
+				background-position: center right;
+				background-repeat: no-repeat;
+			}
+			&.active {
+				background-image: url('../images/btn_batch_edit_on.png');
+				background-position: center right;
+				background-repeat: no-repeat;
+			}
+		}
+	}
+}

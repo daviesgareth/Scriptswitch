@@ -1,0 +1,67 @@
+.summary {
+
+	.summary-panel {
+		padding: $padding-default / 2 $padding-default * 2.5;
+
+		h2.left-col-title {
+			font-weight: 700;
+			font-size: $font-size-extra-large;
+		}
+
+		// Recommendation list
+
+		.recommendation {
+			a {
+				color: $color-blue;
+			}
+			font-size: $font-size-extra-large;
+			line-height: $font-size-extra-large * 1.5;
+			padding: $padding-default 0;
+			border-bottom: 1px solid #b1b3b3;
+			margin: 0;
+			padding-left: $padding-default * 3.5;
+			&.first {
+				padding-bottom: $padding-default * 1.5;
+				padding-left: 0;
+			}
+			&.new {
+				background-image: url(../images/recommendation_new.png);
+			}
+			&.edited {
+				background-image: url(../images/recommendation_edited.png);
+			}
+			&.deleted {
+				background-image: url(../images/recommendation_deleted.png);
+			}
+			&.rejected {
+				background-image: url(../images/recommendation_rejected.png);
+			}
+			background-position: left center;
+			background-repeat: no-repeat;
+			&.deployment,
+			&.profile {
+				padding-left: 0;
+				color: $font-color-default;
+			}
+			&.last {
+				border-bottom-width: 0;
+			}
+		}
+
+	}
+
+	.btn-base.close-summary {
+		width: 100%;
+	}
+
+	// Managers view
+
+	&.managers {
+		.recommendation {
+			&.rejected {
+				background-image: none;
+			}
+		}
+	}
+
+}

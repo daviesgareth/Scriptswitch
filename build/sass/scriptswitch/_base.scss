@@ -1,0 +1,75 @@
+/******************************
+/* Define variables
+/*
+/* Variables will be specified in the following format:
+/* $css-declaration-variable : value;
+/* E.g: font-size-small : $font-size-default * 0.5;
+/*****************************/
+
+/*
+// Globals
+*/
+
+	// Body
+
+		$body-background: 			#ffffff;
+
+	// Brand colours
+
+		$color-orange: 				#e87722;
+		$color-main-background: 	#ededed;
+		$color-grey-light: 			#cccdcd;
+		$color-grey-dark:			#53565b;
+		$color-grey-mid:			#b5b5b5;
+		$color-border:				#b1b3b3;
+		$color-blue:				#0066cc;
+
+	// Fonts
+
+		$font-family-default: Arial, sans-serif;
+
+		$font-size-default: 		11px; // Body copy text
+		$font-size-medium:			12px;
+		$font-size-large: 			13px; // Tabs and buttons
+		$font-size-extra-large: 	15px; // Headings
+
+		$line-height-multiplier: 	1.5;
+		$line-height-default:		$line-height-multiplier * $font-size-default;
+
+		$font-color-default:		#333333;
+
+	// Margins
+
+		$margin-default:			10px;
+		$margin-top-section: 		13px;
+		$margin-left-section:		13px;
+		$margin-right-section:		$margin-left-section;
+		$margin-bottom-section:		$margin-top-section;
+
+	// Padding
+
+		$padding-default:			10px;
+
+	// Grid -- Bootstrap defaults
+
+		//== Media queries breakpoints
+		//
+		//## Define the breakpoints at which your layout will change, adapting to different screen sizes.
+
+		// Medium screen / desktop
+		// Note: Deprecated $screen-md and $screen-desktop as of v3.0.1
+
+			$screen-md:                  1024px !default;
+			$screen-md-min:              $screen-md !default;
+			$screen-desktop:             $screen-md-min !default;
+
+		// Large screen / wide desktop
+		// Note: Deprecated $screen-lg and $screen-lg-desktop as of v3.0.1
+
+			$screen-lg:                  1200px !default;
+			$screen-lg-min:              $screen-lg !default;
+			$screen-lg-desktop:          $screen-lg-min !default;
+
+		// So media queries don't overlap when required, provide a maximum
+
+			$screen-md-max:              ($screen-lg-min - 1) !default;

@@ -1,0 +1,40 @@
+.switch-pagination {
+	padding: 8px $padding-default;
+	background: $color-grey-light;
+	border: 1px solid $color-grey-dark;
+	border-width: 0 1px 1px;
+	a {
+		color: $font-color-default;
+		&.pagination-page-active {
+			font-weight: 700;
+		}
+	}
+	.pagination-pages,
+	.pagination-next-prev {
+		display: inline-block;
+	}
+	.page-index,
+	.pagination-links,
+	.pagination-pages {
+		margin-right: $margin-default * 2;
+	}
+	p {
+		margin: 0;
+	}
+	.scriptswitch-select {
+		width: 145px;
+		.scriptswitch-select-selected-option.no-selection,
+		.scriptswitch-select-selected-option.no-selection:hover {
+			font-style: normal;
+			border-color: $color-grey-dark;
+			background: url('../images/pagination_select_down_arrow.png') right center no-repeat;
+		}
+		&.open {
+			.scriptswitch-select-selected-option.no-selection {
+				font-style: normal;
+				border-color: $color-grey-dark;
+				background: url('../images/pagination_select_down_arrow_open.png') right center no-repeat;
+			}
+		}
+	}
+}

@@ -1,0 +1,91 @@
+.template-select,
+.template-manager {
+	.template {
+		border: 1px solid $color-grey-dark;
+		background: #ffffff;
+		.template-header {
+			background: $color-grey-light;
+			padding: $padding-default / 2 $padding-default / 2 $padding-default / 2 $padding-default * 2;
+			border-bottom: 1px solid $color-grey-dark;
+			font-size: $font-size-large;
+			h2 {
+				font-size: $font-size-extra-large;
+				font-weight: 700;
+				margin: 5px 0;
+				float: left;
+			}
+		}
+		.template-view {
+			margin: 3px;
+			padding:  $padding-default $padding-default * 1.5 $padding-default / 2;
+			.template-name {
+				font-size: $font-size-extra-large;
+				font-weight: 700;
+				margin-bottom: $margin-default / 2;
+			}
+			.template-justification-message {
+				margin-bottom: $margin-default / 2;
+			}
+			&.template-active {
+				border: 2px solid $color-orange;
+			}
+			&.template-odd {
+				background-color: #f4f3ec;
+			}
+		}
+	}
+	.template-controls {
+		.btn-base {
+			width: 49%;
+		}
+	}
+}
+
+.template-manager {
+
+	.template {
+		border-width: 0 1px;
+		height: 250px;
+	}
+
+	.subtab-header .search-box-container {
+		width: 100%;
+		.template-search {
+			width: 100%;
+		}
+	}
+
+	.template-editor {
+		.template-editor-header {
+			padding: $padding-default $padding-default * 2;
+			background: $color-grey-dark;
+			color: #ffffff;
+			font-weight: 700;
+			font-size: $font-size-extra-large;
+		}
+		.template-editor-wysiwyg {
+			background-color: #ffffff;
+			border: 1px solid $color-grey-dark;
+			border-width: 0 1px;
+			padding: $padding-default;
+			.wysiwyg-placeholder {
+				width: 100%;
+			}
+		}
+	}
+
+	.base-buttons {
+		.btn-base {
+			width: 39%;
+			&.btn-delete {
+				width: 18%;
+			}
+		}
+	}
+
+
+}
+
+
+
+

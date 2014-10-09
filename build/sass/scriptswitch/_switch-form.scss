@@ -1,0 +1,112 @@
+.switch-form-col {
+	background: $color-grey-dark;
+}
+
+.switch-form {
+	background: #ffffff;
+	border: 1px solid $color-grey-dark;
+	padding: $padding-default $padding-default * 2;
+	h2 {
+		margin-top: 0;
+		margin-bottom: $margin-default / 2;
+		font-size: $font-size-large;
+		font-weight: 700;
+	}
+	table {
+		tr td {
+			padding: $padding-default / 3 $padding-default $padding-default / 3 0;
+			input {
+				height: 18px
+			}
+			p {
+				margin-bottom: 3px;
+			}
+		}
+	}
+
+	.scriptswitch-select {
+		width: 100%;
+	}
+
+	.switch-form-step {
+		border-bottom: 1px solid $color-grey-light;
+		padding-bottom: 8px;
+		margin-bottom: 8px;
+		.switch-form-product-search-table {
+			width: 100%;
+			input {
+				width: 100%;
+				border: 1px solid $color-grey-light;
+			}
+		}
+		.switch-form-options-table {
+			width: 100%;
+			.switchscript-select {
+				width: 100%;
+			}
+		}
+		&.justification-text {
+			position: relative;
+			.btn-template {
+				position: absolute;
+				top: -3px;
+				right: 0;
+				@include border-radius(3px);
+				border: 1px solid $color-border;
+				background: $color-grey-light;
+				font-size: $font-size-large;
+				padding: $padding-default / 3 $padding-default;
+			}
+		}
+		&.last {
+			border-bottom: 0;
+			margin-bottom: 0;
+		}
+	}
+
+	.btn-switch-form {
+		font-size: $font-size-large;
+		padding: $padding-default / 3;
+		line-height: 18px;
+		width: 48%;
+		&.last {
+			float: right;
+		}
+	}
+
+	// WSYIWYG Placeholder
+
+	img.wysiwyg-placeholder {
+		margin-top: 8px;
+		width: 100%;
+		height: 167px;
+	}
+}
+
+.switch-form-controls {
+	padding: 8px $padding-default $padding-default * 3;
+	.swtich-form-button-row {
+		margin-bottom: 5px;
+		border-bottom: 1px solid $color-border;
+		&.last {
+			margin-bottom: 0;
+			border-bottom: 0;
+		}
+	}
+	.btn-switch-form-controls {
+		height: 24px;
+		width: 32%;
+		margin-right: 2%;
+		margin-bottom: $margin-default / 2;
+		float: left;
+	}
+	.keep-justification {
+		position: absolute;
+		bottom: 5px;
+		right: 20px;
+		color: $color-grey-light;
+	}
+	.batch-edit-save {
+		width: 100%;
+	}
+}
